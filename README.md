@@ -20,9 +20,10 @@
         <p>Olá meu nome é Júlio tenho 35 anos, Sou natural de Estância-SE. Atualmente moro em
             Caçapava-SP, onde estou por cerca 7 anos.</p>
     <main/>
-         
+      <footer>  
         ©2026 🌴 Júlio Oliveira 🌴 Caçapava-SP, Brasil 
-       
+     </footer>  
+        
 </body>
     
 </html>
