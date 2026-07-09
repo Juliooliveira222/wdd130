@@ -22,7 +22,7 @@
     <main>
          
     <footer>
-        <p>©2026 🌴 Júlio Oliveira 🌴 Caçapava-SP, Brasil<p>
+        <p>©2026 🌴 Júlio Oliveira 🌴 Caçapava-SP, Brasil</p>
     </footer>
 
 </body>
