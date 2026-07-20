@@ -58,7 +58,7 @@ footer {
 /* Seletores de classe */
 
 .Caixa {
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid rgb(0, 0, 0, 0.2);
     padding: 1rem;
     margin: 1rem;
     background-color: #eee;
