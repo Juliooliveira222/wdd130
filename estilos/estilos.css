@@ -40,11 +40,9 @@ main {
 
 aside {
     width: 20rem;
-    background-color: #eee;
     color: #333;
     text-align: center;
-    padding: 1rem;
-    margin: 1rem;
+    position: relative;
 }
 
 aside img {
@@ -65,13 +63,13 @@ footer {
 
 /* Seletores de classe */
 
-Caixa {
+.caixa {
     border: 1px solid rgb(0, 0, 0, 0.2);
     padding: 1rem;
     margin: 1rem;
     background-color: #eee;
 }
 
-indentacao {
+.indentacao {
     padding-left: 2rem;
 }
