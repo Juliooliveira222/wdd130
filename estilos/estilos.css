@@ -23,10 +23,10 @@ h1 {
 main img {
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 150px;
+    width: 125px;
     height: auto;
     border: 2px solid darkblue;
-    padding: 2px;
+    padding: 3px;
     box-shadow: 0 0 30px gray;
     float: right;
 }
@@ -47,14 +47,16 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 150px;
     height: auto;
 }
 
 aside h2 {
     position: absolute;
-    top: 0px;
-    left: 15px;
+    top: 25px;
+    left: 0px;
 }
 
 footer {
