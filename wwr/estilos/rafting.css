@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #055805;
-    --cor-secundaria: #ffeb3b;
+    --cor-secundaria: #070908;
     --cor-destaque1: #264653;
     --cor-destaque2: rgba(255, 255, 255, 0.85);
     --fonte-titulo: "Times New Roman", "Georgia", serif;
@@ -81,6 +81,7 @@ h1, h2 {
     position: relative;
     width: 100%;
     margin-top: 10px;
+    color:#070908;
 }
 
 .hero img {
