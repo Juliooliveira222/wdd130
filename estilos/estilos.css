@@ -1,80 +1,110 @@
-/* resetar meu css do meu projeto*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --altura-imagem: auto;
+    --alinhamento-texto: center;
+
+}
+
 nav {
-    background-color: darkblue;
+    background-color: rgb(0, 130, 139);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(0, 130, 139);
+    padding-top: 1rem;
+    border-bottom: 2px solid rgb(0, 130, 139);
+
 }
 
 main img {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 125px;
-    height: auto;
-    border: 2px solid darkblue;
-    padding: 3px;
+
+    width: 150px;
+    height: var(--altura-imagem);
+    border: 1px solid rgb(0, 130, 139);
+    padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 1rem 0 1rem 1rem;
 }
 
-p {
-    padding: 0;
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: start;
+
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
     width: 20rem;
     color: #333;
-    text-align: center;
+    background-color: #eee;
+    padding: 1rem;
+    text-align: var(--alinhamento-texto);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
 }
 
 aside img {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 150px;
-    height: auto;
+    width: 90%;
+    height: var(--altura-imagem);
 }
 
 aside h2 {
     position: absolute;
-    top: 25px;
-    left: 0px;
+    top: 40px;
+    left: 70px;
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #1e1d1d;
-    text-align: center;
+    border-top: 1px solid #000;
+    text-align: var(--alinhamento-texto);
 
 }
 
-/* Seletores de classe */
-
+/* Seletores de Classe */
 .caixa {
-    border: 1px solid rgb(0, 0, 0, 0.2);
-    padding: 1rem;
     margin: 1rem;
-    background-color: #eee;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #ddd;
+
 }
 
 .indentacao {
     padding-left: 2rem;
+    margin-top: 1rem;
+
 }
