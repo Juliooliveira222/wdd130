@@ -37,7 +37,7 @@ h1 {
 
 main img {
 
-    width: 150px;
+    width: 100px;
     height: var(--altura-imagem);
     border: 1px solid rgb(0, 130, 139);
     padding: 2px;
