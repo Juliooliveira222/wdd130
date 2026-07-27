@@ -87,6 +87,7 @@ article {
 
 .hero {
     position: relative;
+    background-color: var(--cor-secundaria);
 }
 
 .hero img {
