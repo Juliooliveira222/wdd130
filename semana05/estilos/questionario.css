@@ -19,9 +19,8 @@ header h1 {
 
 main {
     margin: 0 auto;
-    background-color: darkgray;
+    background-color: #dadada;
     padding: 10px 30px 30px 30px;
-
 }
 
 form {
@@ -33,7 +32,7 @@ label {
     margin-top: 15px;
 }
 
-input, textarea, select {
+input, textarea, select, button {
     padding: 5px 10px;
 }
 
