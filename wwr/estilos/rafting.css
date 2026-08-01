@@ -218,3 +218,237 @@ footer p {
     height: 32px;
     object-fit: cover;
 }
+
+/* --- CONFIGURAÇÕES GERAIS --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- CABEÇALHO (HEADER) --- */
+header {
+    background-color: #2b333f; /* Azul escuro / grafite */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+header .logo {
+    max-height: 70px;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+header nav a:hover {
+    background-color: #e0e0e0;
+}
+
+/* --- CONTEÚDO PRINCIPAL (MAIN) --- */
+main {
+    background-color: #cbe3ed; /* Fundo azul claro exato da imagem */
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px;
+    border-left: 1px solid #a8c4d0;
+    border-right: 1px solid #a8c4d0;
+}
+
+/* Seção de Título e Endereço */
+.topo-contato {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.topo-contato h1 {
+    font-size: 2.2rem;
+    color: #1a232a;
+    margin-bottom: 10px;
+}
+
+.topo-contato p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333333;
+}
+
+/* Layout lado a lado (Mapa + Formulário) */
+.conteudo-principal-contato {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+.mapa-container {
+    flex: 1;
+    border: 1px solid #888888;
+    background-color: #ffffff;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+}
+
+/* Formulário de Contato */
+.form-contato {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linha-form {
+    display: flex;
+    align-items: flex-start;
+}
+
+.linha-form label {
+    width: 130px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    padding-top: 4px;
+}
+
+.linha-form input[type="text"],
+.linha-form input[type="email"],
+.linha-form textarea {
+    flex: 1;
+    padding: 5px 8px;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.linha-form textarea {
+    resize: vertical;
+}
+
+/* Opções do Radio Button */
+.opcoes-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.opcoes-radio label {
+    width: auto;
+    font-weight: normal;
+    font-size: 0.88rem;
+    padding-top: 0;
+}
+
+.checkbox-container {
+    margin-left: 130px;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Botão de Enviar */
+.btn-enviar {
+    margin-left: 130px;
+    margin-top: 5px;
+    padding: 6px 15px;
+    background-color: #b8c9d9;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #222222;
+}
+
+.btn-enviar:hover {
+    background-color: #a3b8cb;
+}
+
+/* --- SEÇÃO EQUIPE --- */
+.equipe-secao {
+    border-top: 1px solid #a0b8c5;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.equipe-secao h2 {
+    font-size: 1.3rem;
+    color: #1e352b;
+    margin-bottom: 20px;
+}
+
+.equipe-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.equipe-cards figure {
+    margin: 0;
+    text-align: center;
+}
+
+.equipe-cards img {
+    width: 140px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #666666;
+    background-color: #ffffff;
+}
+
+.equipe-cards figcaption {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #333333;
+}
+
+/* --- RODAPÉ (FOOTER) --- */
+footer {
+    background-color: #2b333f; /* Mesmo tom escuro do header */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+footer .socialmedia img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Deixa os ícones brancos/claros */
+}
