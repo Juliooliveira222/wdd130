@@ -452,3 +452,95 @@ footer .socialmedia img {
     height: 32px;
     object-fit: cover;  /* Deixa os ícones brancos/claros */
 }
+
+/* Container que junta o mapa e o formulário */
+.contato-container {
+  display: flex;
+  gap: 20px; /* Espaço entre o mapa e o formulário */
+  border: 1px solid #707070; /* Borda cinza em volta da seção */
+  border-radius: 12px; /* Borda arredondada do card */
+  padding: 15px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+/* Coluna do Mapa */
+.mapa-coluna {
+  flex: 1 1 0; /* Ocupa 50% da largura */
+  min-height: 350px;
+  border-radius: 8px;
+  overflow: hidden; /* Garante que o iframe respeite as cantos arredondados */
+}
+
+.mapa-coluna iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px; /* Adicione isso para garantir que o mapa tenha altura mínima */
+    border: 0;
+}
+
+/* Coluna do Formulário */
+.form-coluna {
+  flex: 1 1 0; /* Ocupa os outros 50% */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0; /* Permite que a coluna encolha se necessário */
+}
+
+/* Organização de Rótulo (Label) + Input lado a lado */
+.campo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.campo label {
+  width: 140px; /* Garante alinhamento uniforme do texto da esquerda */
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Inputs e Textarea */
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+  flex: 1 1 0;
+  padding: 6px 10px;
+  border: 1px solid #707070;
+  border-radius: 6px; /* Borda arredondada suave dos campos */
+  outline: none;
+}
+
+.campo textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+/* Ajuste para Radio buttons e Checkbox */
+.radio-group, .checkbox-group {
+  align-items: flex-start;
+}
+
+.radio-group .options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Botão Entrar em Contato */
+.btn-enviar {
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #707070;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-enviar:hover {
+  background-color: #f0f0f0;
+}
