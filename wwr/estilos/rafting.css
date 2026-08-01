@@ -448,7 +448,7 @@ footer .socialmedia {
 }
 
 footer .socialmedia img {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) invert(1); /* Deixa os ícones brancos/claros */
+    width: 32px;
+    height: 32px;
+    object-fit: cover;  /* Deixa os ícones brancos/claros */
 }
