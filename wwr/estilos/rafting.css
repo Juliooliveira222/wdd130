@@ -7,8 +7,7 @@
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
-
-* * {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
