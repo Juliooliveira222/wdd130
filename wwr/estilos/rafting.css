@@ -297,14 +297,15 @@ main {
 
 /* Layout lado a lado (Mapa + Formulário) */
 .conteudo-principal-contato {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
     align-items: stretch;
     margin-bottom: 30px;
 }
 
 .mapa-container {
-    flex: 1;
+    flex: 1.1;
     border: 1px solid #888888;
     background-color: #ffffff;
 }
@@ -315,41 +316,82 @@ main {
     min-height: 320px;
 }
 
-/* Formulário de Contato */
-.form-contato {
-    flex: 1.1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* ===== CONTATO ===== */
+
+.contato-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    align-items:start;
+    margin:30px auto;
 }
 
-.linha-form {
-    display: flex;
-    align-items: flex-start;
+.mapa-coluna iframe{
+    width:100%;
+    height:420px;
+    border:1px solid #888;
 }
 
-.linha-form label {
-    width: 130px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    color: #1a1a1a;
-    padding-top: 4px;
+.form-coluna{
+    width:100%;
 }
 
-.linha-form input[type="text"],
-.linha-form input[type="email"],
-.linha-form textarea {
-    flex: 1;
-    padding: 5px 8px;
-    border: 1px solid #777777;
-    border-radius: 3px;
-    background-color: #ffffff;
-    font-size: 0.9rem;
+.form-contato{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.linha-form textarea {
-    resize: vertical;
+.campo{
+    display:grid;
+    grid-template-columns:130px 1fr;
+    align-items:center;
+    gap:10px;
 }
+
+.campo label{
+    font-weight:bold;
+}
+
+.campo input,
+.campo textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid #999;
+}
+
+.propósito-mensagem{
+    display:grid;
+    grid-template-columns:130px 1fr;
+    border:none;
+    padding:0;
+}
+
+.propósito-mensagem legend{
+    font-weight:bold;
+}
+
+.propósito-mensagem label{
+    display:block;
+    margin-bottom:6px;
+}
+
+.campo-checkbox{
+    margin-left:140px;
+}
+
+.form-contato button{
+    margin-left:140px;
+    padding:8px;
+    border:1px solid #777;
+    background:#eee;
+    cursor:pointer;
+}
+
+.form-contato button:hover{
+    background:#ddd;
+}
+
 
 /* Opções do Radio Button */
 .opcoes-radio {
