@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <img src="imagens/logo.png" alt="Logo Rio Aventura Rafting" width="120" height="120">
+        <img src="imagens/logo.png" alt="Logo Rio Aventura Rafting" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
@@ -25,73 +25,66 @@
     </header>
 
     <main>
-        <!-- SEÇÃO PRINCIPAL DE CONTATO -->
-        <section class="contato-container">
+        <!-- SEÇÃO SUPERIOR: TÍTULO E CONTATOS DA SUA EMPRESA -->
+        <section class="topo-contato">
             <h1>Companhia de Rafting em Corredeiras</h1>
-             <address class="informacoes-contato">
+            <address class="informacoes-contato">
                 <p>123 Rua Principal do Rio</p>
                 <p>Foz do Iguaçu, Paraná</p>
                 <p>+55 45 99999-9999</p>
                 <p>info@corredeiras.com</p>
             </address>
-        <div class="mapa-coluna">
-            <div class="mapa">
-                <iframe ...></iframe>
-            </div>
-        </div>
-        <div class="form-coluna">
-            <form action="#" method="post" class="form-contato">
-                <div class="campo">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
+        </section>
 
-                <div class="campo">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <fieldset class="propósito-mensagem">
-                    <legend>Propósito da Mensagem:</legend>
-                    <label>
-                        <input type="radio" name="proposito" value="geral" checked> Dúvida Geral
-                    </label>
-                    <label>
-                        <input type="radio" name="proposito" value="reserva"> Pergunta sobre Reservas
-                    </label>
-                    <label>
-                        <input type="radio" name="proposito" value="sugestao"> Sugestão
-                    </label>
-                </fieldset>
-
-                <div class="campo">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                </div>
-
-                <div class="campo-checkbox">
-                    <label>
-                        <input type="checkbox" name="newsletter" value="sim"> Por favor, me inscreva na newsletter mensal
-                    </label>
-                </div>
-
-                <button type="submit">Entrar em Contato</button>
-            </form>
-            <!-- MAPA / LOCALIZAÇÃO -->
-            <div class="mapa-container">
+        <!-- SEÇÃO PRINCIPAL (MAPA À ESQUERDA + FORMULÁRIO À DIREITA) -->
+        <section class="contato-container">
+            <div class="mapa-coluna">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.089852899478!2d-54.585421!3d-25.539821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMyJzIzLjMiUyA1NMKwMzUnMDcuNSJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
-                    width="100%" 
-                    height="300" 
-                    style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy">
                 </iframe>
             </div>
+
+            <div class="form-coluna">
+                <form action="#" method="post" class="form-contato">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="campo campo-radio">
+                        <span class="label-fake">Propósito da Mensagem</span>
+                        <div class="opcoes-radio">
+                            <label><input type="radio" name="proposito" value="geral" checked> Dúvida Geral</label>
+                            <label><input type="radio" name="proposito" value="reserva"> Pergunta sobre Reservas</label>
+                            <label><input type="radio" name="proposito" value="sugestao"> Sugestão</label>
+                        </div>
+                    </div>
+
+                    <div class="campo campo-textarea">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite aqui" rows="4" required></textarea>
+                    </div>
+
+                    <div class="campo-checkbox">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="sim"> Por favor, me inscreva na newsletter mensal
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Entrar em Contato!</button>
+                </form>
+            </div>
         </section>
 
         <!-- SEÇÃO EQUIPE / SERVIÇO -->
-        <section class="equipe">
+        <section class="equipe-secao">
             <h2>Estamos Aqui para Servi-lo</h2>
             <div class="equipe-cards">
                 <figure>
@@ -114,15 +107,9 @@
     <footer>
         <p>&copy; 2026 | Rio Aventura Rafting | Julio Oliveira Batista de Jesus</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank">
-                <img src="imagens/facebook.png" alt="Facebook">
-            </a> 
-            <a href="https://instagram.com" target="_blank">
-                <img src="imagens/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="imagens/linkedin.png" alt="LinkedIn">
-            </a>
+            <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a> 
+            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
         </nav>
     </footer>
 
