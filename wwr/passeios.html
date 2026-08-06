@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Aventura Rafting - Nossos Passeios</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #74a2d8, #a8c8ec, #d8e6f8);
+            color: #1a252f;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+
+        header {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            margin-top: 10px;
+        }
+
+        .logo {
+            background-color: #0d2b45;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            background-color: #e2e8f0;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid #cbd5e1;
+            transition: background 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #cbd5e1;
+        }
+
+        main {
+            width: 100%;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .title-banner {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #0f2c59;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        /* Lista de Roteiros */
+        .tour-card {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 1px solid #b0c4de;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .tour-img {
+            width: 40%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .tour-info {
+            flex: 1;
+        }
+
+        .tour-title {
+            font-size: 1.3rem;
+            color: #0f2c59;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .tour-desc {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .tour-details {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #0d2b45;
+        }
+
+        .badge {
+            background-color: #d1e3f8;
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid #9bbdff;
+        }
+
+        @media (max-width: 768px) {
+            .tour-card {
+                flex-direction: column;
+            }
+            .tour-img {
+                width: 100%;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RAFTING</div>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="#">Sobre Nós</a>
+            <a href="passeios.html" class="active">Passeios</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title-banner">Conheça Nossos Roteiros de Aventura!</h1>
+
+        <!-- Passeio 1 -->
+        <div class="tour-card">
+            <img class="tour-img" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Rafting Família">
+            <div class="tour-info">
+                <h2 class="tour-title">Rafting Família - Rota das Águas Calmas</h2>
+                <p class="tour-desc">
+                    Ideal para iniciantes, crianças e famílias que buscam contemplação e diversão sem sobressaltos. Percurso tranquilo com paradas para banho de rio e fotos.
+                </p>
+                <div class="tour-details">
+                    <span class="badge">Duração: 2h</span>
+                    <span class="badge">Nível: Fácil</span>
+                    <span class="badge">Idade Mínima: 6 anos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passeio 2 -->
+        <div class="tour-card">
+            <img class="tour-img" src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?auto=format&fit=crop&w=800&q=80" alt="Rafting Radical">
+            <div class="tour-info">
+                <h2 class="tour-title">Rafting Radical - Desafio das Corredeiras</h2>
+                <p class="tour-desc">
+                    Para quem busca pura adrenalina! Enfrente corredeiras de nível III e IV em um trecho acidentado do rio com quedas e muita água no rosto.
+                </p>
+                <div class="tour-details">
+                    <span class="badge">Duração: 3h30</span>
+                    <span class="badge">Nível: Avançado</span>
+                    <span class="badge">Idade Mínima: 14 anos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passeio 3 -->
+        <div class="tour-card">
+            <img class="tour-img" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Expedição Trilha e Canoagem">
+            <div class="tour-info">
+                <h2 class="tour-title">Expedição Trilha & Cânion</h2>
+                <p class="tour-desc">
+                    Uma combinação perfeita de caminhada ecológica pela mata nativa com travessia de caiaque pelas gargantas de pedra do rio principal.
+                </p>
+                <div class="tour-details">
+                    <span class="badge">Duração: 4h</span>
+                    <span class="badge">Nível: Intermediário</span>
+                    <span class="badge">Idade Mínima: 10 anos</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
