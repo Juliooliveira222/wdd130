@@ -13,163 +13,183 @@
         }
 
         body {
-            background: linear-gradient(to bottom, #74a2d8, #a8c8ec, #d8e6f8);
+            background: linear-gradient(180deg, #5b8ec3 0%, #9cbcdb 40%, #cce0f5 100%);
             color: #1a252f;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 40px;
+            justify-content: center;
+            padding: 20px 0 40px 0;
         }
 
-        /* Header e Navegação */
-        header {
+        .container {
             width: 100%;
-            max-width: 900px;
+            max-width: 850px;
+            padding: 0 15px;
+        }
+
+        /* Topo e Navegação */
+        header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
-            margin-top: 10px;
+            margin-bottom: 20px;
         }
 
-        .logo {
-            background-color: #0d2b45;
+        .logo-box {
+            background-color: #0b2545;
             color: #ffffff;
             padding: 10px 20px;
-            border-radius: 4px;
+            border-radius: 3px;
             font-weight: bold;
-            font-size: 1.2rem;
-            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         nav {
             display: flex;
-            gap: 10px;
+            gap: 8px;
         }
 
         nav a {
             text-decoration: none;
-            color: #000;
-            background-color: #e2e8f0;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 0.9rem;
+            color: #1a252f;
+            background-color: #e2ebf4;
+            padding: 6px 14px;
+            border-radius: 3px;
+            font-size: 0.85rem;
             font-weight: bold;
-            border: 1px solid #cbd5e1;
-            transition: background 0.2s;
+            border: 1px solid #779ec2;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
 
         nav a:hover, nav a.active {
-            background-color: #cbd5e1;
+            background-color: #c4d7ec;
         }
 
-        /* Container Principal */
-        main {
-            width: 100%;
-            max-width: 900px;
-            padding: 0 20px;
-        }
-
-        .title-banner {
+        /* Título Principal */
+        h1.main-title {
             text-align: center;
-            font-size: 1.8rem;
-            color: #0f2c59;
-            margin: 20px 0;
+            font-size: 1.75rem;
+            color: #0b2545;
+            margin-bottom: 15px;
             font-weight: bold;
         }
 
-        /* Hero Image */
-        .hero-img {
+        /* Molduras das Imagens Principais */
+        .img-frame {
             width: 100%;
-            height: 380px;
-            object-fit: cover;
+            height: 320px;
+            border: 2px solid #0b2545;
             border-radius: 4px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
 
-        /* Seção de Texto com Imagem ao Lado */
-        .intro-section {
+        .img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Bloco Central (Texto + Foto Lado a Lado) */
+        .middle-block {
             display: flex;
             gap: 20px;
-            margin: 30px 0;
             align-items: center;
+            margin-bottom: 20px;
         }
 
-        .intro-text {
+        .middle-text {
             flex: 1;
-            line-height: 1.6;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
             text-align: justify;
         }
 
-        .side-img {
-            width: 45%;
-            height: 220px;
-            object-fit: cover;
+        .middle-img-frame {
+            width: 42%;
+            height: 190px;
+            border: 2px solid #0b2545;
             border-radius: 4px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
         }
 
-        /* Seção História */
-        .section-title {
-            font-size: 1.5rem;
-            color: #0f2c59;
-            margin-bottom: 10px;
+        .middle-img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Títulos de Seções */
+        h2.section-title {
+            font-size: 1.35rem;
+            color: #0b2545;
+            margin-bottom: 8px;
             font-weight: bold;
         }
 
         .history-text {
-            line-height: 1.6;
-            font-size: 0.95rem;
+            font-size: 0.88rem;
+            line-height: 1.5;
             text-align: justify;
             margin-bottom: 20px;
         }
 
-        /* Miniaturas de Destaque */
-        .cards-title {
+        h3.bottom-title {
             text-align: center;
-            font-size: 1.3rem;
-            color: #0f2c59;
-            margin: 30px 0 15px 0;
+            font-size: 1.2rem;
+            color: #0b2545;
+            margin: 25px 0 15px 0;
             font-weight: bold;
         }
 
-        .grid-highlights {
+        /* Miniaturas Inferiores */
+        .cards-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
+            gap: 8px;
         }
 
-        .card-mini {
-            background-color: #ffffff;
-            border-radius: 4px;
+        .card-item {
+            background-color: #dce7f3;
+            border: 1px solid #779ec2;
+            border-radius: 3px;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .card-mini img {
+        .card-item img {
             width: 100%;
-            height: 90px;
+            height: 80px;
             object-fit: cover;
-        }
-
-        .card-mini span {
             display: block;
-            padding: 8px 4px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            color: #0f2c59;
         }
 
-        @media (max-width: 768px) {
-            .intro-section {
+        .card-item span {
+            display: block;
+            padding: 6px 2px;
+            font-size: 0.72rem;
+            font-weight: bold;
+            color: #0b2545;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .middle-block {
                 flex-direction: column;
             }
-            .side-img {
+            .middle-img-frame {
                 width: 100%;
             }
-            .grid-highlights {
+            .cards-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -177,28 +197,32 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">RAFTING</div>
-        <nav>
-            <a href="index.html" class="active">Página Inicial</a>
-            <a href="#">Sobre Nós</a>
-            <a href="passeios.html">Passeios</a>
-            <a href="#">Fale Conosco</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo-box">RAFTING</div>
+            <nav>
+                <a href="index.html" class="active">Página Inicial</a>
+                <a href="#">Sobre Nós</a>
+                <a href="passeios.html">Passeios</a>
+                <a href="#">Fale Conosco</a>
+            </nav>
+        </header>
 
-    <main>
-        <h1 class="title-banner">Viva a Emoção no Rio Aventura Rafting!</h1>
-        
-        <!-- Imagem 1 (Hero) -->
-        <img class="hero-img" src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?auto=format&fit=crop&w=1200&q=80" alt="Rafting no cânion">
+        <h1 class="main-title">Viva a Emoção no Rio Aventura Rafting!</h1>
 
-        <div class="intro-section">
-            <p class="intro-text">
+        <!-- Foto 1 (Visão Superior do Cânion) -->
+        <div class="img-frame">
+            <img src="imagens/hero.jpg" alt="Rafting no Cânion">
+        </div>
+
+        <div class="middle-block">
+            <p class="middle-text">
                 Desconecte-se da rotina e viva uma experiência inesquecível nas águas mais vibrantes da região. Na Rio Aventura Rafting, combinamos a pura adrenalina do ecoturismo com total segurança e guias experientes para criar memórias inesquecíveis com seus amigos e família.
             </p>
-            <!-- Imagem 2 (Lateral) -->
-            <img class="side-img" src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=600&q=80" alt="Caiaque em corredeira">
+            <!-- Foto 2 (Bote em Detalhe) -->
+            <div class="middle-img-frame">
+                <img src="imagens/foto1.jpeg" alt="Equipe navegando no rio">
+            </div>
         </div>
 
         <h2 class="section-title">História</h2>
@@ -206,33 +230,40 @@
             A Rio Aventura Rafting nasceu em 2010 do sonho de um grupo de amigos apaixonados pela natureza e pelos desafios das corredeiras. O que começou como uma pequena operação local transformou-se em uma referência de aventura na região. Nosso propósito sempre foi claro: proporcionar experiências inesquecíveis em meio à natureza, combinando a máxima adrenalina com padrões rigorosos de segurança e respeito ao meio ambiente.
         </p>
 
-        <!-- Imagem Principal de Rafting -->
-        <img class="hero-img" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80" alt="Bote de Rafting no rio">
+        <!-- Foto 5 (Onda Forte) -->
+        <div class="img-frame">
+            <img src="imagens/caiaque.jpeg" alt="Aventura nas Corredeiras">
+        </div>
 
-        <h3 class="cards-title">A aventura está te esperando!</h3>
-        <div class="grid-highlights">
-            <div class="card-mini">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=300&q=80" alt="Águas Calmas">
+        <p class="history-text">
+            Ao longo de mais de uma década de atuação, já levamos milhares de aventureiros pelas águas mais impressionantes da região. Com uma equipe de guias certificados e equipamentos de última geração, continuaremos oferecendo a verdadeira essência da aventura com a mesma paixão do primeiro dia.
+        </p>
+
+        <h3 class="bottom-title">A aventura está te esperando!</h3>
+
+        <div class="cards-grid">
+            <div class="card-item">
+                <img src="imagens/aguas-calmas.jpg" alt="Águas Calmas">
                 <span>Águas Calmas</span>
             </div>
-            <div class="card-mini">
-                <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=300&q=80" alt="Águas Agitadas">
+            <div class="card-item">
+                <img src="imagens/agua-agitadas.jpg" alt="Águas Agitadas">
                 <span>Águas Agitadas</span>
             </div>
-            <div class="card-mini">
-                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=300&q=80" alt="Para todos os Níveis">
+            <div class="card-item">
+                <img src="imagens/praia.jpeg" alt="Para Todos os Níveis">
                 <span>Para Todos os Níveis</span>
             </div>
-            <div class="card-mini">
-                <img src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?auto=format&fit=crop&w=300&q=80" alt="Águas Decrescentes">
-                <span>Águas Radical</span>
+            <div class="card-item">
+                <img src="imagens/aventura4.jpg" alt="Águas Decrescentes">
+                <span>Águas Decrescentes</span>
             </div>
-            <div class="card-mini">
-                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=300&q=80" alt="Trilha Ecológica">
+            <div class="card-item">
+                <img src="imagens/floresta.jpeg" alt="Trilha Ecológica">
                 <span>Trilha Ecológica</span>
             </div>
         </div>
-    </main>
+    </div>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rio Aventura Rafting - Nossos Passeios</title>
+    <title>Rio Aventura Rafting - Página Inicial</title>
     <style>
         * {
             box-sizing: border-box;
@@ -13,196 +13,257 @@
         }
 
         body {
-            background: linear-gradient(to bottom, #74a2d8, #a8c8ec, #d8e6f8);
+            background: linear-gradient(180deg, #5b8ec3 0%, #9cbcdb 40%, #cce0f5 100%);
             color: #1a252f;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 40px;
+            justify-content: center;
+            padding: 20px 0 40px 0;
         }
 
-        header {
+        .container {
             width: 100%;
-            max-width: 900px;
+            max-width: 850px;
+            padding: 0 15px;
+        }
+
+        /* Topo e Navegação */
+        header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
-            margin-top: 10px;
+            margin-bottom: 20px;
         }
 
-        .logo {
-            background-color: #0d2b45;
+        .logo-box {
+            background-color: #0b2545;
             color: #ffffff;
             padding: 10px 20px;
-            border-radius: 4px;
+            border-radius: 3px;
             font-weight: bold;
-            font-size: 1.2rem;
-            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         nav {
             display: flex;
-            gap: 10px;
+            gap: 8px;
         }
 
         nav a {
             text-decoration: none;
-            color: #000;
-            background-color: #e2e8f0;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 0.9rem;
+            color: #1a252f;
+            background-color: #e2ebf4;
+            padding: 6px 14px;
+            border-radius: 3px;
+            font-size: 0.85rem;
             font-weight: bold;
-            border: 1px solid #cbd5e1;
-            transition: background 0.2s;
+            border: 1px solid #779ec2;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
 
         nav a:hover, nav a.active {
-            background-color: #cbd5e1;
+            background-color: #c4d7ec;
         }
 
-        main {
-            width: 100%;
-            max-width: 900px;
-            padding: 0 20px;
-        }
-
-        .title-banner {
+        /* Título Principal */
+        h1.main-title {
             text-align: center;
-            font-size: 1.8rem;
-            color: #0f2c59;
-            margin: 20px 0;
+            font-size: 1.75rem;
+            color: #0b2545;
+            margin-bottom: 15px;
             font-weight: bold;
         }
 
-        /* Lista de Roteiros */
-        .tour-card {
-            background-color: rgba(255, 255, 255, 0.6);
-            border: 1px solid #b0c4de;
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 25px;
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .tour-img {
-            width: 40%;
-            height: 200px;
-            object-fit: cover;
+        /* Molduras das Imagens Principais */
+        .img-frame {
+            width: 100%;
+            height: 320px;
+            border: 2px solid #0b2545;
             border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
 
-        .tour-info {
+        .img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Bloco Central (Texto + Foto Lado a Lado) */
+        .middle-block {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .middle-text {
             flex: 1;
-        }
-
-        .tour-title {
-            font-size: 1.3rem;
-            color: #0f2c59;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .tour-desc {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 1.5;
-            margin-bottom: 15px;
             text-align: justify;
         }
 
-        .tour-details {
-            display: flex;
-            gap: 15px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            color: #0d2b45;
-        }
-
-        .badge {
-            background-color: #d1e3f8;
-            padding: 4px 8px;
+        .middle-img-frame {
+            width: 42%;
+            height: 190px;
+            border: 2px solid #0b2545;
             border-radius: 4px;
-            border: 1px solid #9bbdff;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
         }
 
-        @media (max-width: 768px) {
-            .tour-card {
+        .middle-img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Títulos de Seções */
+        h2.section-title {
+            font-size: 1.35rem;
+            color: #0b2545;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .history-text {
+            font-size: 0.88rem;
+            line-height: 1.5;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        h3.bottom-title {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #0b2545;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+        }
+
+        /* Miniaturas Inferiores */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .card-item {
+            background-color: #dce7f3;
+            border: 1px solid #779ec2;
+            border-radius: 3px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card-item img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-item span {
+            display: block;
+            padding: 6px 2px;
+            font-size: 0.72rem;
+            font-weight: bold;
+            color: #0b2545;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .middle-block {
                 flex-direction: column;
             }
-            .tour-img {
+            .middle-img-frame {
                 width: 100%;
-                height: 180px;
+            }
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">RAFTING</div>
-        <nav>
-            <a href="index.html">Página Inicial</a>
-            <a href="#">Sobre Nós</a>
-            <a href="passeios.html" class="active">Passeios</a>
-            <a href="#">Fale Conosco</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo-box">RAFTING</div>
+            <nav>
+                <a href="index.html" class="active">Página Inicial</a>
+                <a href="#">Sobre Nós</a>
+                <a href="passeios.html">Passeios</a>
+                <a href="#">Fale Conosco</a>
+            </nav>
+        </header>
 
-    <main>
-        <h1 class="title-banner">Conheça Nossos Roteiros de Aventura!</h1>
+        <h1 class="main-title">Viva a Emoção no Rio Aventura Rafting!</h1>
 
-        <!-- Passeio 1 -->
-        <div class="tour-card">
-            <img class="tour-img" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Rafting Família">
-            <div class="tour-info">
-                <h2 class="tour-title">Rafting Família - Rota das Águas Calmas</h2>
-                <p class="tour-desc">
-                    Ideal para iniciantes, crianças e famílias que buscam contemplação e diversão sem sobressaltos. Percurso tranquilo com paradas para banho de rio e fotos.
-                </p>
-                <div class="tour-details">
-                    <span class="badge">Duração: 2h</span>
-                    <span class="badge">Nível: Fácil</span>
-                    <span class="badge">Idade Mínima: 6 anos</span>
-                </div>
+        <!-- Foto 1 (Visão Superior do Cânion) -->
+        <div class="img-frame">
+            <img src="imagens/hero.jpg" alt="Rafting no Cânion">
+        </div>
+
+        <div class="middle-block">
+            <p class="middle-text">
+                Desconecte-se da rotina e viva uma experiência inesquecível nas águas mais vibrantes da região. Na Rio Aventura Rafting, combinamos a pura adrenalina do ecoturismo com total segurança e guias experientes para criar memórias inesquecíveis com seus amigos e família.
+            </p>
+            <!-- Foto 2 (Bote em Detalhe) -->
+            <div class="middle-img-frame">
+                <img src="imagens/foto1.jpeg" alt="Equipe navegando no rio">
             </div>
         </div>
 
-        <!-- Passeio 2 -->
-        <div class="tour-card">
-            <img class="tour-img" src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?auto=format&fit=crop&w=800&q=80" alt="Rafting Radical">
-            <div class="tour-info">
-                <h2 class="tour-title">Rafting Radical - Desafio das Corredeiras</h2>
-                <p class="tour-desc">
-                    Para quem busca pura adrenalina! Enfrente corredeiras de nível III e IV em um trecho acidentado do rio com quedas e muita água no rosto.
-                </p>
-                <div class="tour-details">
-                    <span class="badge">Duração: 3h30</span>
-                    <span class="badge">Nível: Avançado</span>
-                    <span class="badge">Idade Mínima: 14 anos</span>
-                </div>
-            </div>
+        <h2 class="section-title">História</h2>
+        <p class="history-text">
+            A Rio Aventura Rafting nasceu em 2010 do sonho de um grupo de amigos apaixonados pela natureza e pelos desafios das corredeiras. O que começou como uma pequena operação local transformou-se em uma referência de aventura na região. Nosso propósito sempre foi claro: proporcionar experiências inesquecíveis em meio à natureza, combinando a máxima adrenalina com padrões rigorosos de segurança e respeito ao meio ambiente.
+        </p>
+
+        <!-- Foto 5 (Onda Forte) -->
+        <div class="img-frame">
+            <img src="imagens/caiaque.jpeg" alt="Aventura nas Corredeiras">
         </div>
 
-        <!-- Passeio 3 -->
-        <div class="tour-card">
-            <img class="tour-img" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Expedição Trilha e Canoagem">
-            <div class="tour-info">
-                <h2 class="tour-title">Expedição Trilha & Cânion</h2>
-                <p class="tour-desc">
-                    Uma combinação perfeita de caminhada ecológica pela mata nativa com travessia de caiaque pelas gargantas de pedra do rio principal.
-                </p>
-                <div class="tour-details">
-                    <span class="badge">Duração: 4h</span>
-                    <span class="badge">Nível: Intermediário</span>
-                    <span class="badge">Idade Mínima: 10 anos</span>
-                </div>
+        <p class="history-text">
+            Ao longo de mais de uma década de atuação, já levamos milhares de aventureiros pelas águas mais impressionantes da região. Com uma equipe de guias certificados e equipamentos de última geração, continuaremos oferecendo a verdadeira essência da aventura com a mesma paixão do primeiro dia.
+        </p>
+
+        <h3 class="bottom-title">A aventura está te esperando!</h3>
+
+        <div class="cards-grid">
+            <div class="card-item">
+                <img src="imagens/aguas-calmas.jpg" alt="Águas Calmas">
+                <span>Águas Calmas</span>
+            </div>
+            <div class="card-item">
+                <img src="imagens/agua-agitadas.jpg" alt="Águas Agitadas">
+                <span>Águas Agitadas</span>
+            </div>
+            <div class="card-item">
+                <img src="imagens/praia.jpeg" alt="Para Todos os Níveis">
+                <span>Para Todos os Níveis</span>
+            </div>
+            <div class="card-item">
+                <img src="imagens/aventura4.jpg" alt="Águas Decrescentes">
+                <span>Águas Decrescentes</span>
+            </div>
+            <div class="card-item">
+                <img src="imagens/floresta.jpeg" alt="Trilha Ecológica">
+                <span>Trilha Ecológica</span>
             </div>
         </div>
-    </main>
+    </div>
 
 </body>
 </html>
