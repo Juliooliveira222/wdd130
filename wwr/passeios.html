@@ -3,265 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rio Aventura Rafting - Página Inicial</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background: linear-gradient(180deg, #5b8ec3 0%, #9cbcdb 40%, #cce0f5 100%);
-            color: #1a252f;
-            display: flex;
-            justify-content: center;
-            padding: 20px 0 40px 0;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 850px;
-            padding: 0 15px;
-        }
-
-        /* Topo e Navegação */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .logo-box {
-            background-color: #0b2545;
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 3px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-
-        nav {
-            display: flex;
-            gap: 8px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #1a252f;
-            background-color: #e2ebf4;
-            padding: 6px 14px;
-            border-radius: 3px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            border: 1px solid #779ec2;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-        }
-
-        nav a:hover, nav a.active {
-            background-color: #c4d7ec;
-        }
-
-        /* Título Principal */
-        h1.main-title {
-            text-align: center;
-            font-size: 1.75rem;
-            color: #0b2545;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        /* Molduras das Imagens Principais */
-        .img-frame {
-            width: 100%;
-            height: 320px;
-            border: 2px solid #0b2545;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-
-        .img-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Bloco Central (Texto + Foto Lado a Lado) */
-        .middle-block {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .middle-text {
-            flex: 1;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            text-align: justify;
-        }
-
-        .middle-img-frame {
-            width: 42%;
-            height: 190px;
-            border: 2px solid #0b2545;
-            border-radius: 4px;
-            overflow: hidden;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-        }
-
-        .middle-img-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Títulos de Seções */
-        h2.section-title {
-            font-size: 1.35rem;
-            color: #0b2545;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        .history-text {
-            font-size: 0.88rem;
-            line-height: 1.5;
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-
-        h3.bottom-title {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #0b2545;
-            margin: 25px 0 15px 0;
-            font-weight: bold;
-        }
-
-        /* Miniaturas Inferiores */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 8px;
-        }
-
-        .card-item {
-            background-color: #dce7f3;
-            border: 1px solid #779ec2;
-            border-radius: 3px;
-            overflow: hidden;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .card-item img {
-            width: 100%;
-            height: 80px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .card-item span {
-            display: block;
-            padding: 6px 2px;
-            font-size: 0.72rem;
-            font-weight: bold;
-            color: #0b2545;
-        }
-
-        @media (max-width: 650px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
-            .middle-block {
-                flex-direction: column;
-            }
-            .middle-img-frame {
-                width: 100%;
-            }
-            .cards-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+    <title>Passeios | Rio Aventura Rafting</title>
+    <meta name="description" content="Conheça os passeios de rafting da Rio Aventura e escolha sua próxima aventura.">
+    <meta name="author" content="Júlio Oliveira Batista de Jesus">
+    <link rel="stylesheet" href="estilos/rafting.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <header>
-            <div class="logo-box">RAFTING</div>
-            <nav>
-                <a href="index.html" class="active">Página Inicial</a>
-                <a href="#">Sobre Nós</a>
-                <a href="passeios.html">Passeios</a>
-                <a href="#">Fale Conosco</a>
-            </nav>
-        </header>
+<header>
+    <img src="imagens/logo.png" alt="Logo Rio Aventura Rafting" width="120" height="120">
 
-        <h1 class="main-title">Viva a Emoção no Rio Aventura Rafting!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="passeios.html">Passeios</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <div class="img-frame">
-            <img src="imagens/hero.jpg" alt="Rafting no Cânion">
+<main>
+    <section class="passeios-topo">
+        <h1>Conheça nossos passeios</h1>
+        <p>Escolha o percurso que combina com seu nível de experiência e prepare-se para viver uma aventura inesquecível.</p>
+        <a class="botao-principal" href="contato.html">Fale Conosco e reserve sua aventura</a>
+    </section>
+
+    <!-- PELO MENOS TRÊS DESCRIÇÕES DETALHADAS COM FOTOS -->
+    <section class="passeios-grid">
+        <article class="passeio-card">
+            <img src="imagens/aguas-calmas.jpg" alt="Passeio de rafting em águas calmas">
+            <div class="passeio-conteudo">
+                <h2>Rafting Águas Calmas</h2>
+                <p>Uma ótima escolha para iniciantes e famílias que desejam conhecer o rafting com tranquilidade. O percurso combina águas mais calmas, belas paisagens e acompanhamento de guias experientes.</p>
+                <p><strong>Dificuldade:</strong> Fácil</p>
+                <p><strong>Duração:</strong> Aproximadamente 2 horas</p>
+            </div>
+        </article>
+
+        <article class="passeio-card">
+            <img src="imagens/agua-agitadas.jpg" alt="Passeio de rafting em águas agitadas">
+            <div class="passeio-conteudo">
+                <h2>Rafting Águas Agitadas</h2>
+                <p>Para quem procura mais adrenalina, este passeio passa por trechos de águas agitadas e proporciona uma experiência cheia de emoção. A atividade é acompanhada por nossa equipe durante todo o percurso.</p>
+                <p><strong>Dificuldade:</strong> Moderada</p>
+                <p><strong>Duração:</strong> Aproximadamente 3 horas</p>
+            </div>
+        </article>
+
+        <article class="passeio-card">
+            <img src="imagens/para-todos.jpg" alt="Grupo praticando rafting para todos os níveis">
+            <div class="passeio-conteudo">
+                <h2>Rafting Aventura</h2>
+                <p>Uma experiência completa para grupos que querem unir aventura, contato com a natureza e diversão. O passeio apresenta diferentes trechos do rio e permite aproveitar a paisagem durante a atividade.</p>
+                <p><strong>Dificuldade:</strong> Intermediária</p>
+                <p><strong>Duração:</strong> Aproximadamente 4 horas</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- TABELA COM TODOS OS PASSEIOS -->
+    <section class="tabela-passeios">
+        <h2>Todos os passeios disponíveis</h2>
+
+        <div class="tabela-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Passeio</th>
+                        <th>Dificuldade</th>
+                        <th>Duração</th>
+                        <th>Indicação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Águas Calmas</td>
+                        <td>Fácil</td>
+                        <td>2 horas</td>
+                        <td>Iniciantes e famílias</td>
+                    </tr>
+                    <tr>
+                        <td>Águas Agitadas</td>
+                        <td>Moderada</td>
+                        <td>3 horas</td>
+                        <td>Aventureiros</td>
+                    </tr>
+                    <tr>
+                        <td>Rafting Aventura</td>
+                        <td>Intermediária</td>
+                        <td>4 horas</td>
+                        <td>Grupos e praticantes</td>
+                    </tr>
+                    <tr>
+                        <td>Trilha Ecológica + Rafting</td>
+                        <td>Intermediária</td>
+                        <td>5 horas</td>
+                        <td>Quem gosta de natureza</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </section>
 
-        <div class="middle-block">
-            <p class="middle-text">
-                Desconecte-se da rotina e viva uma experiência inesquecível nas águas mais vibrantes da região. Na Rio Aventura Rafting, combinamos a pura adrenalina do ecoturismo com total segurança e guias experientes para criar memórias inesquecíveis com seus amigos e família.
-            </p>
-            
-            <div class="middle-img-frame">
-                <img src="imagens/foto1.jpeg" alt="Equipe navegando no rio">
-            </div>
-        </div>
+    <section class="passeios-final">
+        <h2>Pronto para a próxima aventura?</h2>
+        <p>Entre em contato com nossa equipe para saber mais sobre os passeios, horários e disponibilidade.</p>
+        <a class="botao-principal" href="contato.html">Fale Conosco</a>
+    </section>
+</main>
 
-        <h2 class="section-title">História</h2>
-        <p class="history-text">
-            A Rio Aventura Rafting nasceu em 2010 do sonho de um grupo de amigos apaixonados pela natureza e pelos desafios das corredeiras. O que começou como uma pequena operação local transformou-se em uma referência de aventura na região. Nosso propósito sempre foi claro: proporcionar experiências inesquecíveis em meio à natureza, combinando a máxima adrenalina com padrões rigorosos de segurança e respeito ao meio ambiente.
-        </p>
+<footer>
+    <p>&copy; 2026 | Rio Aventura Rafting | Júlio Oliveira Batista de Jesus</p>
 
-        <div class="img-frame">
-            <img src="imagens/caiaque.jpeg" alt="Aventura nas Corredeiras">
-        </div>
-
-        <p class="history-text">
-            Ao longo de mais de uma década de atuação, já levamos milhares de aventureiros pelas águas mais impressionantes da região. Com uma equipe de guias certificados e equipamentos de última geração, continuaremos oferecendo a verdadeira essência da aventura com a mesma paixão do primeiro dia.
-        </p>
-
-        <h3 class="bottom-title">A aventura está te esperando!</h3>
-
-        <div class="cards-grid">
-            <div class="card-item">
-                <img src="imagens/aguas-calmas.jpg" alt="Águas Calmas">
-                <span>Águas Calmas</span>
-            </div>
-            <div class="card-item">
-                <img src="imagens/agua-agitadas.jpg" alt="Águas Agitadas">
-                <span>Águas Agitadas</span>
-            </div>
-            <div class="card-item">
-                <img src="imagens/praia.jpeg" alt="Para Todos os Níveis">
-                <span>Para Todos os Níveis</span>
-            </div>
-            <div class="card-item">
-                <img src="imagens/aventura4.jpg" alt="Águas Decrescentes">
-                <span>Águas Decrescentes</span>
-            </div>
-            <div class="card-item">
-                <img src="imagens/floresta.jpeg" alt="Trilha Ecológica">
-                <span>Trilha Ecológica</span>
-            </div>
-        </div>
-    </div>
+    <nav class="socialmedia">
+        <a href="https://facebook.com" target="_blank" rel="noopener">
+            <img src="imagens/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">
+            <img src="imagens/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">
+            <img src="imagens/linkedin.png" alt="LinkedIn">
+        </a>
+    </nav>
+</footer>
 
 </body>
 </html>
